@@ -54,6 +54,7 @@ sudo apt-get install -yq \
         nmap \
         openvpn \
         php \
+        php-cli \
         prips \
         proxychains4 \
         python3-dev \
@@ -74,6 +75,7 @@ sudo apt-get install -yq \
         trickle \
         p7zip-full\
         unrar-free \
+        unzip \
         neovim \
         wipe \
         wireless-tools \
