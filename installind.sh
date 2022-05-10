@@ -55,6 +55,7 @@ sudo apt-get install -yq \
         openvpn \
         php \
         php-cli \
+        php-curl \
         prips \
         proxychains4 \
         python3-dev \
