@@ -1,6 +1,7 @@
 #!/bin/bash
 # disesuaikan oleh irfnrdh dari https://gitlab.com/vay3t/hax0rpi & https://raw.githubusercontent.com/vay3t/hax0rpi/master/ubuntu-installer.sh
-# Later https://github.com/thehackingsage/hackpi
+# Later https://github.com/thehackingsage/hackpi, https://github.com/may215/awesome-termux-hacking https://github.com/T4P4N/Awesome-Termux https://github.com/search?q=awesome+termux
+
 
 export DEBIAN_FRONTEND=noninteractive
 
