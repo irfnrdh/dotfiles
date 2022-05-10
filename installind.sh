@@ -89,3 +89,5 @@ sudo apt-get install -yq \
 
 # Install Composer 
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+
+# cargo install rustcat # modern Port listener and Reverse shell
