@@ -1,5 +1,5 @@
 #!/bin/bash
-# disesuaikan oleh irfnrdh dari https://gitlab.com/vay3t/hax0rpi 
+# disesuaikan oleh irfnrdh dari https://gitlab.com/vay3t/hax0rpi & https://raw.githubusercontent.com/vay3t/hax0rpi/master/ubuntu-installer.sh
 
 export DEBIAN_FRONTEND=noninteractive
 
