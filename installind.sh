@@ -53,9 +53,7 @@ sudo apt-get install -yq \
         netdiscover \
         nmap \
         openvpn \
-        php \
-        php-cli \
-        php-curl \
+        php php-common php-cli php-curl php-gd php-mbstring php-xml php-zip php-mysql libapache2-mod-php \
         prips \
         proxychains4 \
         python3-dev \
