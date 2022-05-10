@@ -1,4 +1,6 @@
 #!/bin/bash
+# disesuaikan oleh irfnrdh dari https://gitlab.com/vay3t/hax0rpi 
+
 export DEBIAN_FRONTEND=noninteractive
 
 # secret directory
