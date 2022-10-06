@@ -21,7 +21,7 @@ Suggestions/improvements
 
 
 ## Cheatsheet
-- Contekind (a cheatsheet guides from IND perspective)
+- [Contekind](https://github.com/irfnrdh/dotfiles/tree/main/cheatsheet/contekind) (a cheatsheet guides from IND perspective)
 
 ## Author
 
