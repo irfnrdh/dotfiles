@@ -19,6 +19,10 @@
 Suggestions/improvements
 [welcome](https://github.com/irfnrdh/dotfiles/issues)!
 
+
+## Cheatsheet
+- Contekind (a cheatsheet guides from IND perspective)
+
 ## Author
 
 | [![twitter/irfnrdh](https://secure.gravatar.com/avatar/54f9e67c65bbec11032e5f057d558042?s=70)](http://twitter.com/irfnrdh "Follow @irfnrdh on Twitter") |
