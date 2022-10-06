@@ -1,0 +1,8 @@
+[user]
+	name = irfnrdh
+	email = kang.fand@gmail.com
+[credential]
+	helper = store
+[pull]
+	ff = only
+	rebase = true

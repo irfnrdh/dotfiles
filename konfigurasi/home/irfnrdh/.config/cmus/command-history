@@ -1,0 +1,3 @@
+q
+help
+bind -f browser backspace browser-up
