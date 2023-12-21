@@ -1,0 +1,86 @@
+env:
+  TERM: xterm-256color
+  #alacritty
+  
+title: Alacritty  
+decorations: full
+startup_mode: Windowed
+
+window:
+  opacity: 0.8
+  dimensions:
+    columns: 120
+    lines: 40
+
+  padding:
+    x: 20 
+    y: 0
+ 
+  title: Alacritty
+
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: Hack
+    style: Regular
+
+  bold:
+    family: Hack
+    style: Bold
+
+  italic:
+    family: Hack
+    style: Italic
+
+  bold_italic:
+    family: Hack
+    style: Bold Italic
+
+  size: 14.0
+
+  offset:
+    x: 1
+    y: 1
+
+colors:
+  primary:
+    background: '#0A0E14'
+    foreground: '#B3B1AD'
+  
+    text:   '#fdf6e3'
+    cursor: '#657b83'
+
+  selection:
+    text: '0x282a36'
+    background: '0xbbc5ff'
+
+  normal:
+    black: '#01060E'
+    red: '#EA6C73'
+    green: '#91B362'
+    yellow: '#F9AF4F'
+    blue: '#53BDFA'
+    magenta: '#FAE994'
+    cyan: '#90E1C6'
+    white: '#C7C7C7'
+
+  bright:
+    black: '#686868'
+    red: '#F07178'
+    green: '#C2D94C'
+    yellow: '#FFB454'
+    blue: '#59C2FF'
+    magenta: '#FFEE99'
+    cyan: '#95E6CB'
+    white: '#FFFFFF'
+
+visual_bell:
+  type: FadingFrame
+  duration: 100
