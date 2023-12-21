@@ -1,0 +1,28 @@
+
+layout {
+     default_tab_template {
+        
+        pane split_direction="horizontal" size="80%" {
+            pane split_direction="vertical" {
+                pane name="Files" size="20%" command="nnn" 
+                pane name="Coding Playground"
+              }
+            children
+        }
+        // close_on_exit 
+        pane split_direction="vertical" {
+            pane name="Debug"
+            pane name="Terminal"
+        }
+        
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+
+    tab name="Ngoding Nyok" 
+}
