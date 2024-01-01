@@ -2,6 +2,7 @@
 
 ![ScreenShot](/screenshot/2022-10-01-231649_1366x768_scrot.png)
 
+![Alt text](image.png)
 
 ## Installation
 
