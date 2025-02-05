@@ -1,17 +1,5 @@
-
-888     888 8888888 888b     d888 888888b.   8888888b.   .d88888b.  
-888     888   888   8888b   d8888 888  "88b  888   Y88b d88P" "Y88b 
-888     888   888   88888b.d88888 888  .88P  888    888 888     888 
-Y88b   d88P   888   888Y88888P888 8888888K.  888   d88P 888     888 
- Y88b d88P    888   888 Y888P 888 888  "Y88b 8888888P"  888     888 
-  Y88o88P     888   888  Y8P  888 888    888 888 T88b   888     888 
-   Y888P      888   888   "   888 888   d88P 888  T88b  Y88b. .d88P 
-    Y8P     8888888 888       888 8888888P"  888   T88b  "Y88888P"  
-                                                                                                                                        
-                                                                    
-      Ini adalah sebuah cheatsheet untuk pengguna Vim Pemula
-        dari seorang pemula oleh Irfannur Diah (@irfnrdh)
-
+Ini adalah sebuah cheatsheet untuk pengguna Vim Pemula
+dari seorang pemula oleh Irfannur Diah (@irfnrdh)
 
 ## Shortcut
 
@@ -20,9 +8,166 @@ Y88b   d88P   888   888Y88888P888 8888888K.  888   d88P 888     888
 - :wq                       = untuk menyimpan dan keluar
 - :list / 
 - `vim satu.txt dua.txt`    = Untuk membuat atau membuka dua file sekaligus
-- ciw 
-- u 
 
+== 1. MODE DASAR ==
+Esc                 = Kembali ke Normal Mode
+i                   = Insert Mode (sebelum kursor)
+I                   = Insert Mode (awal baris)
+a                   = Insert Mode (setelah kursor)
+A                   = Insert Mode (akhir baris)
+o                   = Tambah baris baru di bawah
+O                   = Tambah baris baru di atas
+v                   = Visual Mode (pilih teks)
+V                   = Visual Line Mode
+Ctrl + v            = Visual Block Mode
+R                   = Replace Mode
+:                   = Command Mode
+
+== 2. NAVIGASI ==
+h                   = Kiri
+l                   = Kanan
+j                   = Bawah
+k                   = Atas
+0                   = Awal baris
+^                   = Awal teks non-spasi
+$                   = Akhir baris
+gg                  = Awal file
+G                   = Akhir file
+5G                  = Lompat ke baris 5
+Ctrl + d            = Scroll setengah halaman ke bawah
+Ctrl + u            = Scroll setengah halaman ke atas
+Ctrl + f            = Scroll satu halaman ke bawah
+Ctrl + b            = Scroll satu halaman ke atas
+H                   = Pindah ke baris atas layar
+M                   = Pindah ke baris tengah layar
+L                   = Pindah ke baris bawah layar
+fx                  = Lompat ke karakter x dalam baris
+tx                  = Lompat sebelum karakter x dalam baris
+%                   = Lompat ke pasangan tanda kurung {}, [], ()
+
+== 3. EDITING ==
+x                   = Hapus karakter di bawah kursor
+X                   = Hapus karakter sebelum kursor
+r<char>            = Ganti karakter di bawah kursor
+dd                  = Hapus satu baris
+dw                  = Hapus satu kata
+D                   = Hapus dari kursor ke akhir baris
+C                   = Hapus dari kursor ke akhir baris + Insert Mode
+J                   = Gabungkan baris berikutnya
+u                   = Undo
+Ctrl + r            = Redo
+.                   = Ulangi aksi terakhir
+ci"                 = Hapus isi dalam tanda kutip dan masuk Insert Mode
+di(                 = Hapus isi dalam tanda kurung
+yi{                 = Copy isi dalam {}
+>>                  = Indentasi satu baris ke kanan
+<<                  = Indentasi satu baris ke kiri
+ciw                 = Hapus isi kata di bawah kursor & masuk Insert Mode
+diw                 = Hapus kata di bawah kursor tanpa masuk Insert Mode
+yaw                 = Copy satu kata
+
+== 4. COPY, CUT, PASTE ==
+yy                  = Copy satu baris
+Y                   = Copy satu baris (sama seperti yy)
+yw                  = Copy satu kata
+p                   = Paste setelah kursor
+P                   = Paste sebelum kursor
+"*p                 = Paste dari clipboard sistem (Linux dengan xclip)
+
+== 5. MULTI-BARISAN & BLOK ==
+V                   = Pilih satu baris penuh
+Ctrl + v            = Pilih dalam mode blok (column select)
+y                   = Copy blok yang dipilih
+d                   = Hapus blok yang dipilih
+>                   = Indentasi blok ke kanan
+<                   = Indentasi blok ke kiri
+
+== 6. PENCARIAN & PENGGANTIAN ==
+/kata               = Cari "kata" ke bawah
+?kata               = Cari "kata" ke atas
+n                   = Lompat ke hasil berikutnya
+N                   = Lompat ke hasil sebelumnya
+:%s/old/new/g       = Ganti semua "old" jadi "new"
+:%s/old/new/gc      = Ganti semua "old" dengan konfirmasi
+:10,20s/old/new/g   = Ganti dari baris 10 sampai 20
+:.,$s/old/new/g     = Ganti dari baris saat ini sampai akhir
+
+== 7. SPLIT WINDOWS ==
+:split              = Split horizontal
+:vsplit             = Split vertikal
+Ctrl + w + w        = Pindah antar split
+Ctrl + w + h/j/k/l  = Pindah ke split kiri/bawah/atas/kanan
+Ctrl + w + q        = Tutup split aktif
+Ctrl + w + =        = Seimbangkan ukuran split
+
+== 8. TABS ==
+:tabnew             = Buat tab baru
+:tabn               = Pindah ke tab berikutnya
+:tabp               = Pindah ke tab sebelumnya
+:tabclose           = Tutup tab aktif
+:tabs               = Tampilkan semua tab
+
+== 9. MACRO (REKAM & JALANKAN ULANG) ==
+q<register>         = Rekam ke register (contoh: qa)
+<commands>          = Lakukan serangkaian perintah
+q                   = Stop recording
+@<register>         = Jalankan macro (contoh: @a)
+@@                  = Jalankan ulang macro terakhir
+
+== 10. BOOKMARK & NAVIGASI CEPAT ==
+m<letter>           = Tandai posisi (contoh: ma)
+'a                  = Lompat ke posisi tanda "a"
+`a                  = Lompat ke posisi tanda "a" (lebih akurat)
+
+== 11. MODE EX (COMMAND MODE) ==
+:w                  = Simpan file
+:q                  = Keluar
+:q!                 = Keluar tanpa menyimpan
+:wq                 = Simpan & keluar
+ZZ                  = Simpan & keluar (shortcut :wq)
+
+== 12. KONFIGURASI VIM ==
+:set nu             = Tampilkan nomor baris
+:set relativenumber = Tampilkan nomor relatif
+:set paste          = Mode paste (hindari auto indent)
+:set nowrap         = Nonaktifkan wrap teks
+:e!                 = Reload file dari disk
+:noh                = Hilangkan highlight pencarian
+:set list           = Tampilkan karakter tak terlihat (spasi, tab)
+
+== 13. NAVIGASI DALAM FILE ==
+Ctrl + o            = Kembali ke posisi sebelumnya
+Ctrl + i            = Ke posisi setelahnya
+gf                  = Buka file di bawah kursor
+gF                  = Buka file di bawah kursor dalam baris baru
+
+== 14. MENGELOLA BUFFER ==
+:ls                 = Tampilkan daftar buffer
+:buffer <num>       = Pindah ke buffer tertentu
+:bnext              = Pindah ke buffer berikutnya
+:bprevious          = Pindah ke buffer sebelumnya
+:bd                 = Tutup buffer saat ini
+:bufdo command      = Jalankan perintah pada semua buffer
+
+== 15. REGISTERS (CLIPBOARD) ==
+"ayy                = Copy baris ke register a
+"ap                 = Paste isi register a
+:registers          = Lihat isi semua register
+"*p                 = Paste dari clipboard sistem (Linux)
+
+== 16. SEARCH DAN GREP ==
+:vimgrep /kata/gj **/*.txt  = Cari "kata" di semua file .txt
+:copen               = Buka daftar hasil pencarian
+:cn                  = Pindah ke hasil pencarian berikutnya
+:cp                  = Pindah ke hasil pencarian sebelumnya
+
+== 17. TRIK PROFESIONAL ==
+- Gunakan "." untuk mengulang aksi terakhir dengan cepat.
+- Gunakan ":w !sudo tee %" untuk menyimpan file dengan sudo.
+- ":argdo %s/old/new/gc" untuk mengganti di semua file terbuka.
+- Gunakan "gf" untuk membuka file berdasarkan path di bawah kursor.
+
+"If you master Vim, you master the terminal!"
 
 
 
@@ -73,6 +218,8 @@ i3wm cheatsheet oleh Irfannur Diah (@irfnrdh)
 - <super> + shift + space = untuk aktifkan mode flooting windows
 - <super> + klik tahan    = untuk pundahkan flooting windows                                                 
 - <super> + f             = untuk aktifkan jendela penuh                                              
+
+
 
 
 
