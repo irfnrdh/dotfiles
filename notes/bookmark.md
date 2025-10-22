@@ -7,5 +7,8 @@
 - https://www.blackbox.ai/
 - https://cline.bot/
 
-
+## WebBase AI Agent
 - https://firebase.studio/
+
+## Updates 
+- https://www.vscodepodcast.com/
